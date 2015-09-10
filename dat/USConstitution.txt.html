@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "XHTML1-s.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml"
+      xml:lang="en" lang="en" >
+
+  <head>
+    <title>CMULogin</title>
+    <link rel="stylesheet" type="text/css" href="/themes/cas.css" />
+    <link rel="stylesheet" type="text/css" href="/themes/simple/theme.css" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <!--<link rel="icon" type="image/png" href="/themes/simple/favicon.png" />-->
+  </head>
+
+  <body onload="if (document.getElementById('username')) document.getElementById('username').focus()">
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'>
+
+<table id="login-box">
+  <tr>
+    <td colspan="2">
+      <div id="headline-container">
+        <strong>CMU</strong>
+        Login
+      </div>
+    </td>
+  </tr>
+
+  
+
+  
+  <tr>
+    <td id="login-form-container">
+      <form method="post" action="https://cas.coloradomesa.edu/login" id="login-form"
+      onsubmit="submitbutton = document.getElementById('login-submit'); submitbutton.value='Please wait...'; submitbutton.disabled=true; return true;">
+  <table id="form-layout">
+    <tr>
+      <td id="username-label-container">
+        <label id="username-label" for="username">
+          Username
+        </label>
+      </td>
+      <td id="username-container">
+        <input type="text" id="username" name="username"
+               size="32" tabindex="1" accesskey="u" />
+      </td>
+    </tr>
+    <tr>
+      <td id="password-label-container">
+        <label id="password-label" for="password">
+          Password
+        </label>
+      </td>
+      <td id="password-container">
+        <input type="password" id="password" name="password"
+               size="32" tabindex="2" accesskey="p" autocomplete="off" />
+      </td>
+    </tr>
+    <tr>
+      <td />
+      <td id="submit-container">
+        <input type="hidden" id="lt" name="lt" value="LT-1441841306ryCmMk0z6f3FskmO7gu" />
+        <input type="hidden" id="service" name="service" value="https:&#x2F;&#x2F;download.coloradomesa.edu&#x2F;grader&#x2F;CSCI480&#x2F;USConstitution.txt" />
+        <input type="submit" class="button" accesskey="l" value="Login"
+               tabindex="4" id="login-submit" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" id="infoline">
+        <a align="left" href='https://mesa4.coloradomesa.edu/passwd/change'>change password</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a align="right" href='https://mesa4.coloradomesa.edu/passwd/forgot'>forgot password</a>
+      </td>
+    </tr>
+  </table>
+</form>
+
+    </td>
+  </tr>
+  
+</table>
+
+
+  </body>
+</html>

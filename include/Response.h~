@@ -1,0 +1,9 @@
+#pragma once
+
+enum error {
+  _OK,
+  HEADER,
+  TREEBUILD,
+  FATALITY
+};
+
